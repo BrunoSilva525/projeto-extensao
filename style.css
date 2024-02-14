@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0; 1&family=Pacifico&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  user-select: none;
+  background-position: center bottom;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#body {
+  background-image: url(Imgs/background-noturno.jpg);
+}
+
+button {
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 2px black;
+  transition: all 0.3s ease;
+}
+
+.modal-sobre-mim,
+.modal-fotos,
+.modal-agradecimentos {
+  background-color: rgba(128, 128, 128, 0.8);
+  width: 30%;
+  height: 400px;
+  text-shadow: 2px 2px rgb(146, 146, 146);
+  font-size: 40px;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  text-decoration: solid;
+  color: black;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.fade,
+.modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-sobre-mim,
+.modal-fotos,
+.modal-agradecimentos,
+#close-modal1,
+#close-modal2,
+#close-modal3,
+.botao-play,
+.botao-opcoes,
+.botao-sair,
+.botao-sobreNos,
+.niveis button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.modal-sobre-mim:hover,
+.modal-fotos:hover,
+.modal-agradecimentos:hover {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+#close-modal1:hover,
+#close-modal2:hover,
+#close-modal3:hover {
+  opacity: 1;
+  background-color: rgb(51, 51, 51);
+  color: #ffffff;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(Imgs/b1.jpg);
+  z-index: 10;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.modal-sobre-mim,
+.modal-fotos,
+.modal-agradecimentos {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-sobre-mim,
+.modal-fotos,
+.modal-agradecimentos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.head-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 1rem;
+}
+
+#close-modal1 button,
+#close-modal2 button,
+#close-modal3 button {
+  display: flex;
+}
+
+.body-modal p {
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.body-modal h2 {
+  text-align: center;
+}
+
+.modal.hide,
+.fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.hide {
+  top: 0;
+}
+
+#secao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#H1 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  color: white;
+}
+
+#tema {
+  background-color: rgba(128, 128, 128, 0.8);
+  text-shadow: 0.5px 0.5px rgb(146, 146, 146);
+  color: black;
+  font-size: 20px;
+  position: absolute;
+}
+
+#tema:hover {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+p {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font: bold;
+  text-align: justify;
+}
+
+
+img {
+  height: 10rem;
+  width: 13rem;
+  border-radius: 5px;
+}
+
+.img-esquerda {
+  float: left;
+  margin-right: 20px;
+}
+
+.img-direita {
+  float: right;
+  margin-left: 20px;
+}
+
+span {
+  font-size: 25px;
+}
+
+#foto-turma {
+  width: 100%;
+  height: 100%;
+}
+
+#audio {
+  position: absolute;
+  right: 0;
+  transform: scale(0.75);
+}
+
+#volume-control {
+  position: relative;
+  top: -15px;
+}
